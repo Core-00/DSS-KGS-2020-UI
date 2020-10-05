@@ -1,0 +1,24 @@
+.help-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.help-img {
+    height: 20px;
+}
+
+.help-content {
+    display: none;
+}
+
+.help-content p,
+.help-content li {
+    font-size: .9rem;
+}
+
+.help-reverse {
+    transform: rotate(180deg);
+}

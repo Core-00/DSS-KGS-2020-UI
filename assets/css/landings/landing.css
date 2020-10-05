@@ -1,0 +1,115 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-l1 {
+    background: url('../../images/landings/landing_1-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.wrapper-l2 {
+    background: url('../../images/landings/landing_2-bg-2.PNG') no-repeat center;
+    background-size: cover;
+    align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+    .wrapper-l2 {
+        background: url('../../images/landings/landing_2-bg.png') no-repeat center;
+        align-items: center;
+    }
+}
+
+.wrapper-l3 .img-menu_static,
+.wrapper-l3 .img-menu {
+    width: 100%;
+    height: auto;
+    transition: .2s;
+}
+
+.wrapper-l3 .img-menu {
+    cursor: pointer;
+}
+
+.wrapper-l3 .img-menu:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.wrapper-l3 .container {
+    width: calc(90vh * (2280 / 1426));
+}
+
+.wrapper-l3 .info-wrapper {
+    position: relative;
+}
+
+.wrapper-l3 .info-lang {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+
+.wrapper-l3 .info-lang .info-control {
+    cursor: pointer;
+    width: 25px;
+}
+
+.wrapper-l3 .info-lang .info-control:hover {
+    transform: scale(1.1, 1.1);
+}
+/* 2280 : 1426 */
+
+.c-btn {
+    background: none;
+    border: medium solid white;
+}
+
+@media (min-width: 768px) {
+    .top_section div {
+        max-height: 40vh;
+    }
+
+    .top_section .half img {
+        width: auto;
+        height: 100%;
+    }
+
+    .top_section .full img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bottom_section .bottom_section-item {
+        height: 40vh;
+    }
+}
+.bottom_section-item {
+    position: relative;
+}
+
+.bottom_section-item-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom_section-item-content {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

@@ -1,0 +1,11 @@
+.content_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content_wrapper-content {
+    width: calc(100% - 250px);
+    height: fit-content;
+    position: relative;
+}
